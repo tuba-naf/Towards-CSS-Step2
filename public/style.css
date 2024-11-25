@@ -8,7 +8,6 @@ body {
   height: auto;
   background-color: white;
 }
-
 .topnavbar {
   /* border: 2px solid black; */
   width: 100%;
@@ -38,16 +37,16 @@ body {
 }
 #placeholder {
   margin: 10px;
-  padding: 1px 0px 0px 15px;
+  padding: 1px 0px;
   position: relative;
 }
 
 #logindistance {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .custom-font {
-  padding: 20px;
+  padding: 15px;
 }
 
 #dubaiimage {
@@ -75,7 +74,7 @@ body {
   height: auto;
   display: flex;
   /* justify-content: center; */
-  padding: 12px;
+  padding: 10px;
   margin: 0px;
   font-weight: bold;
   color: black;
@@ -84,15 +83,15 @@ body {
   flex-wrap: wrap;
 }
 #categories {
-  margin: auto 0px auto 3px;
+  margin: auto 0px auto 4px;
   accent-color: blue;
   /* height: 25px; */
 }
 #cattext {
   height: 30px;
-  width: 120px;
+  width: 40px;
   margin: 2px 0px 2px 0px;
-  padding: 2px;
+  padding: 0px;
   color: black;
   font-weight: bold;
   font-family: arial;
@@ -111,7 +110,7 @@ body {
   font-family: arial;
 }
 #secbutton {
-  margin: 2px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +120,7 @@ body {
   font-weight: bolder;
   border-radius: 4px;
   outline-color: black;
-  padding: 4px;
+  padding: 2px;
   background-color: white;
 }
 #buttonimage {
@@ -329,6 +328,11 @@ body {
   display: flex;
   align-items: center;
 }
+
+#m1 img {
+  width: 100%;
+  height: auto;
+}
 #container12 {
   position: relative;
   /* top: 1400px; */
@@ -452,13 +456,13 @@ body {
   height: 50px; */
 
 #care {
-  position: relative;
-  width: 100%;
-  height: auto;
-  /* top: 2320px; */
   display: flex;
-  flex-wrap: wrap;
-  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+#care img {
+  width: 100%; /* Reduce size */
+  height: auto; /* Maintain aspect ratio */
 }
 #Bcont15 {
   position: relative;
@@ -509,6 +513,10 @@ body {
   align-items: contain;
   justify-content: center;
   background-color: rgb(72, 70, 70);
+}
+#containerf img {
+  width: 100%; /* Reduce size */
+  height: auto; /* Maintain aspect ratio */
 }
 #hs {
   position: relative;
@@ -735,6 +743,10 @@ body {
   position: relative;
   /* top: 4882px; */
 }
+#Elemain img {
+  width: 100%;
+  height: auto;
+}
 #sta {
   position: relative;
   width: 100%;
@@ -849,6 +861,11 @@ body {
   flex-wrap: wrap;
   justify-content: row;
   align-items: center;
+}
+
+#fiv img {
+  width: 100%;
+  height: auto;
 }
 
 #text {
@@ -1020,22 +1037,341 @@ body {
   font-size: large;
 }
 
-@media screen and (max-width: 786px) {
+/* General Styles for Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Reset margins and paddings for smaller screens */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styling */
   body {
-    height: auto;
     width: 100%;
+    height: auto;
+    background-color: white;
+    font-size: 14px; /* Smaller font size for mobile */
   }
+
+  /* Navbar Styles */
+  .topnavbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #feee00;
+    margin: 0px auto;
+    font-size: medium;
+    font: bold;
+  }
+
+  /* Navbar items stacked vertically */
   .topnavbar ul {
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    text-align: center; /* Center navbar items */
+    margin: 0px auto;
   }
 
+  .topnavbar li {
+    font-size: 14px; /* Adjust font size for mobile */
+    display: block; /* Stack the items vertically */
+    padding: 10px;
+  }
+
+  /* Make the logos responsive */
+  #dubaiimage,
+  #noonimage {
+    margin: 10px 0;
+    padding: 0;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Second Container */
   .secondcontainer {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    text-align: center;
+  }
+
+  /* Adjust textbox for smaller screens */
+  #textbox {
+    width: 100%;
+    padding-left: 30px;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+
+  /* Button styles */
+  #secbutton {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+  }
+
+  #button {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+  }
+
+  /* Third container */
+  #thirdcontainer {
+    width: 100%;
+    background-color: #feee00;
+    display: block; /* Stack elements vertically */
+  }
+
+  /* Main box in the third container */
+  #mainbox {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Main sections within #maina, #mainb, #mainc */
+  #maina,
+  #mainb,
+  #mainc {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  /* Images in the main sections */
+  #maina img,
+  #mainb img,
+  #mainc img {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Horizontal Image Handling: Ensure that horizontal images scale well on mobile */
+  .horizontal-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+    margin-bottom: 15px;
+  }
+
+  /* Text adjustments for better readability */
+  .text-content {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  /* Footer links on hover */
+  footer .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Grid for Product Images */
+  .cont11 img,
+  .cont14 img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* Mobile-specific adjustments for containers */
+  .container11,
+  .container13,
+  .container14 {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+  .three {
+    width: 100%; /* Adjust the width of individual containers */
+    display: flex; /* Use flexbox for individual items */
+    justify-content: center; /* Center images horizontally */
+    margin: 10px 0; /* Add spacing between images */
+  }
+
+  /* Service Cards Adjustments */
+  .cont11,
+  .cont14 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(174, 184, 194);
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .cont11 img,
+  .cont14 .img14 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust Heart Icon */
+  .heart11,
+  .heart14 {
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+  }
+
+  /* Ensure the text aligns well on small screens */
+  .cont11 .service-text,
+  .cont14 .service-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin-top: 10px;
+  }
+  /* Hides the images inside the specific divs */
+  #m1 img,
+  #care img,
+  #containerf img,
+  #Elemain img,
+  #fiv img {
+    display: none; /* Hide these images on screens smaller than 768px */
+  }
+
+  /* Center "Help" section and adjust button sizes */
+  #help {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #helph {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .helpt {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Stack categories (btb div) vertically */
+  #btb {
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .bt ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .bt h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .bt li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #secondlast {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text inside child elements */
+    padding: 20px; /* Optional padding for spacing */
+    align-items: center;
+  }
+  #go {
+    text-align: center; /* Centers the text within the element */
+    display: flex; /* Ensures it's treated as a block-level element */
+    margin: 0px auto; /* Centers the element 
+    horizontally in its container */
+    width: 100%; /* Makes sure it spans the container width */
+    font-size: 30x; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    height: auto;
+  }
+  #go {
+    transform: translateX(-50%); /* Adjust for slight misalignment */
+    left: 75%;
+    position: relative;
+    font-size: 30px;
+  }
+  #cu {
+    margin: 10px 0; /* Add spacing above and below the text */
+    font-size: 28px; /* Adjust font size for mobile */
+    font-weight: bold; /* Make headings stand out */
+    width: 100%; /* Ensure full-width for alignment */
+  }
+
+  .slimg {
+    display: flex; /* Ensure images are block-level */
+    margin: 10px auto; /* Center images horizontally */
+    width: 60%; /* Responsive width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #cu {
+    margin-top: 20px;
+  }
+  .icon-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
   }
 
-  #textbox {
-    width: 90%;
+  #icon2 img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  /* Footer adjustments */
+  #lastdiv {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  #lastdiv ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #lastdiv ul li {
+    font-size: 12px;
+    margin: 5px;
+  }
+  .helpt {
+    margin-top: 16px;
   }
 }
